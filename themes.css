@@ -1,0 +1,137 @@
+:root {
+  /* Aura Dark (Default) */
+  --bg-color: #020617;
+  --bg-gradient: radial-gradient(circle at 0% 0%, rgba(99, 102, 241, 0.05) 0, transparent 50%), radial-gradient(circle at 100% 100%, rgba(168, 85, 247, 0.05) 0, transparent 50%);
+  --card-bg: rgba(15, 23, 42, 0.8);
+  --border-color: rgba(51, 65, 85, 0.5);
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --accent-color: #6366f1;
+  --accent-hover: #4f46e5;
+  --input-bg: rgba(30, 41, 59, 0.5);
+}
+
+[data-theme="light-aurora"] {
+  --bg-color: #ffffff;
+  --bg-gradient: radial-gradient(circle at 0% 0%, rgba(99, 102, 241, 0.05) 0, transparent 50%), radial-gradient(circle at 100% 100%, rgba(16, 185, 129, 0.05) 0, transparent 50%);
+  --card-bg: #f8fafc;
+  --border-color: #cbd5e1;
+  --text-primary: #020617;
+  --text-secondary: #334155;
+  --accent-color: #4338ca;
+  --accent-hover: #312e81;
+  --input-bg: #f1f5f9;
+}
+
+[data-theme="solar-flare"] {
+  --bg-color: #0f172a;
+  --bg-gradient: radial-gradient(circle at 0% 0%, rgba(234, 179, 8, 0.1) 0, transparent 50%), radial-gradient(circle at 100% 100%, rgba(249, 115, 22, 0.1) 0, transparent 50%);
+  --card-bg: rgba(30, 41, 59, 0.9);
+  --border-color: rgba(234, 179, 8, 0.2);
+  --text-primary: #fff7ed;
+  --text-secondary: #fdba74;
+  --accent-color: #eab308;
+  --accent-hover: #ca8a04;
+  --input-bg: rgba(15, 23, 42, 0.6);
+}
+
+[data-theme="midnight-tech"] {
+  --bg-color: #000000;
+  --bg-gradient: linear-gradient(135deg, rgba(6, 182, 212, 0.05) 0%, rgba(0, 0, 0, 1) 50%, rgba(139, 92, 246, 0.05) 100%);
+  --card-bg: rgba(10, 10, 10, 0.95);
+  --border-color: rgba(0, 255, 200, 0.2);
+  --text-primary: #ffffff;
+  --text-secondary: #00ffc8;
+  --accent-color: #06b6d4;
+  --accent-hover: #0891b2;
+  --input-bg: #111111;
+}
+
+/* Aplicación de variables a elementos clave */
+body {
+  background-color: var(--bg-color) !important;
+  background-image: var(--bg-gradient) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Cards y Contenedores */
+.bg-slate-900\/80,
+.bg-slate-950\/80,
+.bg-slate-900\/50,
+.bg-slate-800\/50,
+.bg-slate-900\/40,
+.bg-slate-900\/30,
+.bg-slate-900\/20 {
+  background-color: var(--card-bg) !important;
+}
+
+/* Bordes */
+.border-slate-800,
+.border-slate-700,
+.border-white\/20,
+.border-indigo-500\/20,
+.border-aura-500\/20,
+.border-slate-700\/50,
+.border-indigo-500\/10 {
+  border-color: var(--border-color) !important;
+}
+
+/* Textos Primarios y Variantes Claros (Force Dark in Light Theme) */
+.text-white,
+.text-slate-100,
+.text-slate-50,
+.text-slate-200,
+.text-indigo-100,
+.text-indigo-50,
+.text-aura-100,
+.text-aura-50 {
+  color: var(--text-primary) !important;
+}
+
+/* Textos Secundarios / Etiquetas */
+.text-slate-400,
+.text-slate-500,
+.text-slate-300,
+.text-slate-600,
+.text-slate-700,
+.text-indigo-200,
+.text-aura-200 {
+  color: var(--text-secondary) !important;
+}
+
+/* Acentos y Títulos Especiales (como 'Estado del Ecosistema' que usa text-indigo-400 o similar) */
+.text-aura-400,
+.text-indigo-400,
+.text-indigo-300,
+.text-purple-400,
+.text-blue-500,
+.text-aura-300 {
+  color: var(--accent-color) !important;
+}
+
+/* Botones y Fondos de Acento */
+.bg-indigo-500,
+.bg-indigo-600,
+.bg-aura-500\/10,
+.bg-blue-500\/10,
+.bg-indigo-500\/10 {
+  background-color: var(--accent-color) !important;
+  color: white !important;
+}
+
+.hover\:bg-indigo-500:hover,
+.hover\:bg-indigo-600:hover {
+  background-color: var(--accent-hover) !important;
+}
+
+/* Inputs y Áreas de entrada */
+.bg-slate-800,
+.bg-slate-900,
+.bg-slate-950 {
+  background-color: var(--input-bg) !important;
+}
+
+/* Corrección para iconos y elementos pequeños */
+svg {
+  color: inherit;
+}
