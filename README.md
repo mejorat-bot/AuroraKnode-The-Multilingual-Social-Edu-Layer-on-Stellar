@@ -4,6 +4,9 @@
 [![Hackathon](https://img.shields.io/badge/DoraHacks-Ideaton%202026-ff6b6b?style=for-the-badge)](https://dorahacks.io)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
+
+DEMO, Versión demo, con simulaciones listas para poder iniciar el desarrollo. Maqueta del proyecto.
+
 **AuraKnode Edu** es una infraestructura educativa descentralizada construida sobre la red **Stellar**. Nuestra misión es convertir cada logro académico en un registro inmutable, portable e inclusivo, eliminando las barreras lingüísticas y geográficas mediante la tecnología Web3.
 
 ---
